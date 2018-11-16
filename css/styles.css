@@ -1,0 +1,61 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+body {
+	background-color: #fcfcff;
+	line-height: 1;
+	font: 16px "Helvetica Neue", Helvetica,Arial, sans-serif;
+	color: #222;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+h1, h2 {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.title {
+	font-size: 4rem;
+	margin-bottom: 15px;
+}
+
+.description {
+	font-size: 1.85rem;
+	font-weight: 300;
+	font-style: normal;
+	color: #aaa;
+	width: 70%;
+	margin: 0 auto 30px;
+}
+
+.selfie {
+	width: 125px;
+	margin-bottom: 25px;
+	border-radius: 100%;
+	opacity: 1;
+	box-shadow: 0 0px 4px 0 rgba(0,0,0,0.18), 0 0px 12px 0 rgba(0,0,0,0.15);
+}
+
+a {
+	color: #222;
+	
+}
+
+.fab, .fas {
+	font-size: 2rem;
+	padding: 20px;
+}
+
+.footer {
+	display: flex;
+    flex-direction: row;
+}
