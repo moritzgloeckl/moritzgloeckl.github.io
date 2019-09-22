@@ -4,12 +4,31 @@ layout: default
 
 <div class="wrapper">
 	<img class="selfie" alt="Moritz Glöckl" src="https://avatars2.githubusercontent.com/u/1828337?s=400&u=ce0e71c5246b24e201128f957ab05e655038f556&v=4">
-	<h1 class="title">Moritz Glöckl</h1>
-	<h2 class="description">Software Developer based in <img src="./assets/flag_austria.png" height="32" width="32" alt="Austria"/></h2>
+
+	<h1 id="title" class="title">Moritz Glöckl</h1>
+
+	<h2 class="description">Software Developer based in <a href="https://en.wikipedia.org/wiki/Austria" alt="Austria" target="_blank"><img src="./assets/flag_austria.png" height="32" width="32" alt="Austria"/></a></h2>
+
+	<div id="email" class="email">moritz <span class="hide">no-spam-pls</span> (at) <span class="hide">no-spam-pls</span> gloeckl <span class="hide">no-spam-pls</span> (dot) <span class="hide">no-spam-pls</span> me</div>
 
 	<div class="footer">
 		<a href="https://github.com/moritzgloeckl" alt="Github" target="_blank"><i class="fab fa-github"></i></a>
 		<a href="https://keybase.io/moritzg" alt="Keybase" target="_blank"><i class="fab fa-keybase"></i></a>
-		<a href="./assets/public_key.asc" alt="GPG" target="_blank"><i class="fas fa-fingerprint"></i></a>
+		<a href="./assets/public_key.asc" alt="GPG Public Key" target="_blank"><i class="fas fa-certificate"></i></a>
+		<a href="https://twitter.com/moritzgloeckl" alt="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+		<a onclick="toggleEmail()" alt="Email"><i class="fas fa-at"></i></a>
 	</div>
+
 </div>
+
+<script type="text/javascript">
+	// Function to show and hide the email address.
+	function toggleEmail() {
+		var email = document.getElementById("email");
+		if (email.style.opacity !== "1") {
+			email.style.opacity = "1";
+		} else {
+			email.style.opacity = "0";
+		}
+	}
+</script>

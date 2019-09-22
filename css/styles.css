@@ -2,11 +2,14 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:700|Open+Sans:300&display=swap');
+
 body {
 	background-color: #fcfcff;
 	line-height: 1;
-	font: 16px "Helvetica Neue", Helvetica,Arial, sans-serif;
+	font-size: 16px;
 	color: #222;
+	margin: 0;
 }
 
 .wrapper {
@@ -26,15 +29,27 @@ h1, h2 {
 .title {
 	font-size: 4rem;
 	margin-bottom: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.email {
+	font-size: 1.85rem;
+	font-weight: 300;
+	font-family: monospace;
+	opacity: 0;
+	transition: 0.8s ease;
+	color: #aaa;
+	display: block;
 }
 
 .description {
 	font-size: 1.85rem;
 	font-weight: 300;
 	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
 	color: #aaa;
 	width: 70%;
-	margin: 0 auto 30px;
+	margin: 16px auto 16px;
 }
 
 .selfie {
@@ -46,6 +61,12 @@ h1, h2 {
 }
 
 a {
+	color: #aaa;
+	transition: 1s ease;
+	cursor: pointer;
+}
+
+a:hover {
 	color: #222;
 }
 
@@ -62,4 +83,16 @@ img {
 .footer {
 	display: flex;
 	flex-direction: row;
+}
+
+.hide {
+	display: none;
+}
+
+::selection {
+	background: #CDCDCD;
+}
+
+::-moz-selection {
+	background: #CDCDCD;
 }
