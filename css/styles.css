@@ -85,6 +85,17 @@ img {
 	flex-direction: row;
 }
 
+.legal {
+	position: absolute;
+	bottom: 15px;
+	font-size: 0.8rem;
+}
+
+.legal a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .hide {
 	display: none;
 }
