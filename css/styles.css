@@ -86,9 +86,9 @@ img {
 }
 
 .legal {
-	position: absolute;
-	bottom: 15px;
-	font-size: 0.8rem;
+	position: sticky;
+	top: calc( 100vh - 50px );
+	margin-top: 16px;
 }
 
 .legal a {
@@ -106,4 +106,26 @@ img {
 
 ::-moz-selection {
 	background: #CDCDCD;
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		padding: 16px;
+	}
+	div.legal-page > .title {
+		font-size:  3rem;
+	}
+	div.legal-page > .description {
+		width: unset;
+		font-size: 1.5rem;
+	}
+	#email {
+		font-size: 1.2rem;
+	}
+	h1#title {
+		font-size: 3rem;
+	}
+	h2.description {
+		font-size: 1.2rem;
+	}
 }
